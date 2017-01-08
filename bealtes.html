@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    	<title>CSS Kwicks Example</title>
+	<meta name="description" content="" />
+	<!--[if IE]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script><![endif]--><style>
+.demo-frame header, .demo-frame h1, .demo-frame .demo-conversion {
+	display: none;
+}
+
+.demo-wrapper {
+	min-height: 500px;
+}
+
+.bsap {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+</style>	<style type="text/css">
+
+		/* structure 100 / 285 */
+		#kwicks { width: 590px; overflow-x: hidden; }
+		#kwicks:hover li a { width: 100px; }
+		#kwicks li		{ 
+			float: left; 
+			overflow-x: hidden; 
+			display: block; 
+		}
+		#kwicks li:hover a { width: 285px !important; }
+
+		/* individual kwicks */
+		#kwicks li a { display: block; text-indent: -9999px; width: 134px; height: 143px; 
+			transition-property: width;
+			transition-duration: 1s;
+
+			-webkit-transition-property: width;
+			-webkit-transition-duration: .5s;
+		}
+		.john 	{ background: url(images/john.gif) no-repeat; }
+		.paul 	{ background: url(images/paul.gif) no-repeat; }
+		.george 	{ background: url(images/george.gif) no-repeat; }
+		.ringo 	{ background: url(images/ringo.gif) no-repeat; }
+	</style>
+</head>
+<body>
+
+
+<!-- content wrapper --><div class="main"><div class="center clear"><!-- main content column --><main id="main"><!--CONTENT-->
+<div class="demo-wrapper">
+
+<h1>Demo:  CSS3图片特效</h1>
+
+
+	<p>把鼠标移动到图片上，看看图片如何变化！</p>
+	
+	<ul id="kwicks">
+		<li><a class="john" href="http://en.wikipedia.org/wiki/John_lennon" title="John Lennon">John Lennon</a></li>
+		<li><a class="paul" href="http://en.wikipedia.org/wiki/Paul_mccartney" title="Paul McCartney">Paul McCartney</a></li>
+		<li><a class="george" href="http://en.wikipedia.org/wiki/George_harrison" title="George Harrison">George Harrison</a></li>
+		<li><a class="ringo" href="http://en.wikipedia.org/wiki/Ringo_starr" title="Ringo Starr">Ringo Starr</a></li>
+	</ul>
+	
+	
+</div>
+
+
+</body>
+</html>

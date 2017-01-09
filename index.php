@@ -1,17 +1,17 @@
 <?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-    // Find out where we are:
-    define('DOCROOT', __DIR__);
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-    // Include autoloader:
-    require_once DOCROOT . '/vendor/autoload.php';
-
-    // Include the boot script:
-    require_once DOCROOT . '/symphony/lib/boot/bundle.php';
-
-    // Begin Symphony proper:
-    symphony(
-        isset($_GET['mode'])
-            ? $_GET['mode']
-            : null
-    );
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
